@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SFT2841NetworkConfiguration xmlns="http://www.schneider-electric.com/SFT2841_NET" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.schneider-electric.com/SFT2841_NET SFT2841_NET.xsd">
+  <ConfigurationIdentity>
+    <ConfigurationDate>2024-10-09</ConfigurationDate>
+    <ProductName>SFT2841</ProductName>
+    <CompanyName>Schneider Electric</CompanyName>
+    <ProductRange>SEPAM</ProductRange>
+  </ConfigurationIdentity>
+  <ModelHeader>
+    <ModelIdentification>SFT2841 Data Model</ModelIdentification>
+    <ModelVersion>2</ModelVersion>
+    <ModelRevision>0</ModelRevision>
+    <ModelDate>2008-11-07</ModelDate>
+    <ModelName>Data Model of SFT2841 Sepam network compatible with SFT850 v2.0</ModelName>
+  </ModelHeader>
+  <RootTcpNetwork CommunicationModel="IEC61850" protocol="ModbusTCP">
+    <IEC61850Edition revision="B" version="2007"/>
+    <DeviceList>
+      <Device application="S84" deviceFamily="series 80" deviceId="1" protocol="ModbusTCP" rangeName="Sepam" version="800">
+        <ProcessName>S84_1</ProcessName>
+        <ICDfile>s80/SE_Sepam_S84-F07_E2V02.icd</ICDfile>
+        <CIDfile>cid/S84_1.cid</CIDfile>
+      </Device>
+      <Device application="S84" deviceFamily="series 80" deviceId="2" protocol="ModbusTCP" rangeName="Sepam" version="800">
+        <ProcessName>S84_2</ProcessName>
+        <ICDfile>s80/SE_Sepam_S84-F07_E2V02.icd</ICDfile>
+        <CIDfile>cid/S84_2.cid</CIDfile>
+      </Device>
+      <Device application="S84" deviceFamily="series 80" deviceId="3" protocol="ModbusTCP" rangeName="Sepam" version="800">
+        <ProcessName>S84_3</ProcessName>
+        <ICDfile>s80/SE_Sepam_S84-F07_E2V02.icd</ICDfile>
+        <CIDfile>cid/S84_3.cid</CIDfile>
+      </Device>
+    </DeviceList>
+    <DeviceAddressList>
+      <DeviceAddress deviceId="1" networkAddress="192.168.66.111" retries="3" timeout="1000"/>
+      <DeviceAddress deviceId="2" networkAddress="192.168.66.112" retries="3" timeout="1000"/>
+      <DeviceAddress deviceId="3" networkAddress="192.168.66.113" retries="3" timeout="1000"/>
+    </DeviceAddressList>
+  </RootTcpNetwork>
+</SFT2841NetworkConfiguration>
